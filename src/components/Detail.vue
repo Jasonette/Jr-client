@@ -2,15 +2,15 @@
   <div>
     <Spinner v-show="loading"></Spinner>
     <div class='detail'>
-      <div class='col-md-8'>
-        <Md :markdown="item.readme"></Md>
-      </div>
-      <div class='col-md-4'>
+      <div class='col-md-4 col-md-push-8'>
         <h1>{{item.name}}</h1>
-        <div>{{item.source}}</div>
+        <a v-bind:href='item.source'>Repo</a>
         <div>{{item.version}}</div>
         <div>{{item.platform}}</div>
         <div>{{item.description}}</div>
+      </div>
+      <div class='col-md-8 col-md-pull-4'>
+        <Md :markdown="item.readme"></Md>
       </div>
     </div>
   </div>
