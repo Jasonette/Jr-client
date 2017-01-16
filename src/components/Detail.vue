@@ -9,7 +9,8 @@
         <div>{{item.platform}}</div>
         <div>{{item.description}}</div>
       </div>
-      <div class='col-md-8 col-md-pull-4'>
+      <hr class="hidden-md hidden-lg">
+      <div class='col-md-8 col-md-pull-4 markdown'>
         <Md :markdown="item.readme"></Md>
       </div>
     </div>
@@ -55,4 +56,9 @@
 	.detail {
 		padding-top: 80px;
 	}
+  .markdown {
+    img {
+      width: 100%;
+    }
+  }
 </style>
