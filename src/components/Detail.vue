@@ -3,8 +3,8 @@
     <Spinner v-show="loading"></Spinner>
     <div class='detail'>
       <div class='col-md-4 col-md-push-8'>
-        <h1>{{item.name}}</h1>
-        <a v-bind:href='item.source'>Repo</a>
+        <h1 class="text-capitalize">{{item.name}}</h1>
+        <a v-bind:href='item.source'>{{item.source}}</a>
         <div>{{item.version}}</div>
         <div>{{item.platform}}</div>
         <div>{{item.description}}</div>
@@ -45,14 +45,6 @@
   }
 </script>
 <style lang="scss">
-  a {
-    display:block;
-    padding: 20px;
-  }
-  a:hover {
-    text-decoration: none;
-    background: #f5f5f5;
-  }
 	.detail {
 		padding-top: 80px;
 	}
