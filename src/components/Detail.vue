@@ -5,7 +5,7 @@
       <div class='col-md-4 col-md-push-8'>
         <h1 class="text-capitalize">{{item.name}}</h1>
         <h4>{{item.description}}</h4>
-        <h4>{{item.version}}</h4>
+        <h4>{{item.v}}</h4>
         <h4>{{item.platform}}</h4>
         <p><a v-bind:href='item.original_url'>{{item.original_url}}</a></p>
         <button class="btn btn-primary btn-lg" type="button">Install</button>
